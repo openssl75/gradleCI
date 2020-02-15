@@ -1,0 +1,7 @@
+badTask.description = 'Task Execution->'
+
+task badTask{
+  doLast{
+    println description + 'This is Bad!'
+  }
+}
