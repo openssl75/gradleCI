@@ -1,6 +1,7 @@
+task badTask
 badTask.description = 'Task Execution->'
 
-task badTask{
+badTask{
   doLast{
     println description + 'This is Bad!!'
   }
