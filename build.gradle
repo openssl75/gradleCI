@@ -1,12 +1,11 @@
-plugins {
-    id "base"
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
 }
 
-task badTask
-badTask.description = 'Task Execution->'
-
-badTask{
-  doLast{
-    println description + 'This is Bad!!'
-  }
+dependencies {
+  testCompile 'junit:junit:4.12'
 }
+
+archivesBaseName = 'gradle-jenkins-sample'
