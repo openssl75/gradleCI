@@ -7,7 +7,6 @@ repositories {
 
 dependencies {
   testCompile 'junit:junit:4.12'
-  checkstyle fileTree(dir: 'lib/checkstyle/', include: '*.jar')
 }
 
 archivesBaseName = 'gradle-jenkins-sample'
